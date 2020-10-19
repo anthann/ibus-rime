@@ -28,3 +28,21 @@ runtime dependencies:
   - libibus-1.0
   - libnotify
   - rime-data (provided by plum)
+
+## compile on ubuntu 18.04
+
+1. Install dependencies: 
+
+```
+apt install libboost-all-dev libgtest-dev libyaml-cpp-dev libleveldb-dev libmarisa-dev libopencc-dev libibus-1.0-dev libnotify-dev
+```
+
+2. Fix gtest issue:
+
+[gtest](https://github.com/AppImage/AppImageKit/issues/571#issuecomment-349471627)
+
+3. install:
+
+```
+./install.sh
+```
